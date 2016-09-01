@@ -4,7 +4,7 @@ MAINTAINER Andrew Nash "akahadaka@gmail.com"
 
 RUN \
 apt-get update && \
-apt-get install -y lib32stdc++6 lib32z1 lib32ncurses5 lib32bz2-1.0 g++ ant python make
+apt-get install -y libstdc++6:i386 libz1:i386 libncurses5:i386 libbz2-1.0:i386 g++ ant python make
 
 # Download and extract android sdk
 RUN curl https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz | tar xz -C /usr/local/

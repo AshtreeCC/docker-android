@@ -2,6 +2,8 @@ FROM ashtreecc/java:latest
 
 MAINTAINER Andrew Nash "akahadaka@gmail.com"
 
+RUN dpkg --add-architecture i386
+
 RUN \
 apt-get update && \
 apt-get install -y libstdc++6:i386 libz1:i386 libncurses5:i386 libbz2-1.0:i386 g++ ant python make

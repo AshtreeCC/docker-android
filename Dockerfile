@@ -1,4 +1,4 @@
-FROM ashtreecc/java:8
+FROM ashtreecc/java:latest
 
 MAINTAINER Andrew Nash "akahadaka@gmail.com"
 

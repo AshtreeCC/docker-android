@@ -13,7 +13,7 @@ ENV ANDROID_HOME /usr/local/android-sdk-linux
 ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # Update and accept licences
-RUN ( sleep 5 && while [ 1 ]; do sleep 1; echo y; done ) | $ANDROID_HOME/tools/android update sdk --no-ui -a --filter platform-tool,build-tools-23.0.3,android-22
+RUN ( sleep 5 && while [ 1 ]; do sleep 1; echo y; done ) | $ANDROID_HOME/tools/android update sdk --no-ui -a --filter platform-tool,build-tools-23.0.3,android-22,extra-android-support
 
 ENV GRADLE_USER_HOME /src/gradle
 

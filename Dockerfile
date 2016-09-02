@@ -10,6 +10,8 @@ apt-get install -y libstdc++6:i386 libz1:i386 libncurses5:i386 libbz2-1.0:i386 g
 
 # Download and extract android sdk
 RUN curl https://dl.google.com/android/android-sdk_r24.4.1-linux.tgz | tar xz -C /usr/local/
+echo y | $ANDROID_HOME/tools/android update sdk --all --filter build-tools-23.0.3 --no-ui
+
 ENV ANDROID_HOME /usr/local/android-sdk-linux
 ENV PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
